@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import authContext from './authContext';
+import AuthContext from './authContext';
 import authReducer from './authReducer';
 import {
   REGISTER_SUCCES,
@@ -12,7 +12,7 @@ import {
   CLEAR_ERRORS,
 } from '../types';
 
-const AuthState = props => {
+const AuthState = props  => {
   const initialState = {
     token: localStorage.getItem('token'),
     isAuthenticated: null,
